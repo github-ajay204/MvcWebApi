@@ -1,0 +1,22 @@
+﻿@model WEBAPI.Models.Product
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@if (Model != null)
+{
+  
+    <div>
+        <h4>Product ID: @Model.ProductID</h4>
+        <p>Name: @Model.Name</p>
+        <p>Price: @Model.Price</p>
+        <p>Description: @Model.Description</p>
+    </div>
+}
+else
+{
+    <p>No data available</p>
+}
